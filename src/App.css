@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* ปิดการ Scroll แนวนอน */
+    box-sizing: border-box;
+  }
+  
+  /* ป้องกัน Navbar หรือ Content ล้นขอบจอ */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    
+  }
+
+  h1, h2, h3, p, a {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1000;
+  }
+  
+  .navbar .link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .section {
+    padding: 100px 20px;
+    text-align: center;
+  }
+
+  .
+  
+  .home {
+    background-color: #f4f4f4;
+    height: 100vh;
+  }
+
+  .about-section{
+    margin-top: 70px;
+  }
+  
+  .about-section, .skill-section, .contact-section {
+    min-height: 80vh;
+  }
+  
+  .progress-bar-background {
+    background-color: #e0e0e0;
+    height: 10px;
+    width: 100%;
+  }
+  
+  .progress-bar {
+    height: 10px;
+    background-color: #76c7c0;
+  }
+
+
+
+
+  /* about me */
+  .about-section {
+    padding: 40px 20px;
+    background-color: #0B111E;
+    color: white;
+  }
+
+.About {
+    font-size: 40px;
+    color: #4EB7F9;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 40px; 
+  }
+
+  .about-container {
+    padding-left: 50px; /* ขยับทั้งคอนเทนเนอร์ไปทางขวา */
+}
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px; /* ระยะห่างระหว่างภาพและข้อความ */
+    margin-left: 50px;
+}
+  
+  .about-image {
+    width: 250px; /* ขนาดภาพ */
+    height: 250px; 
+    margin-right: 20px; /* ระยะห่างระหว่างภาพและข้อความ */
+    margin-left: 100px;
+}
+  
+  .about-text {
+    flex: 1; /* ให้ข้อความขยายเต็มพื้นที่ที่เหลือ */
+    line-height: 1.6; /* ระยะห่างของบรรทัด */
+    color: white;
+    margin-right:100px;
+    margin-left: 40px;
+  }
+  
+  .about-text p {
+    font-size: 16px; /* ขนาดตัวอักษร */
+    margin-bottom: 15px;
+  }
+  
+  .contact-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Education Section */
+.education-section {
+    padding: 50px 20px;
+    background-color: #0B111E;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px; 
+  }
+  
+  .section-title {
+    font-size: 40px;
+    color: #4EB7F9;
+    margin-bottom: 30px;
+  }
+  
+  /* Timeline Container */
+  .timeline {
+    position: relative;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #4e89ae;
+    transform: translateX(-50%);
+  }
+  
+  /* Timeline Item */
+  .timeline-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  .timeline-item2 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    transform: translateX(420px);
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: #4e89ae;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    
+  }
+
+  .timeline-dot2 {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: #4e89ae;
+    border-radius: 50%;
+    transform: translateX(-430px);
+    z-index: 1;
+  }
+  
+  .timeline-content {
+    position: relative;
+    width: 45%;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .timeline-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #4e89ae;
+  }
+  
+  .university, .school {
+    font-weight: bold;
+    color: #5aa9e6;
+  }
+  
+  .timeline-date {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #5aa9e6;
+  }
+  
+  /* Alternate Positions */
+  .timeline-content.left {
+    text-align: right;
+  }
+  
+  .timeline-content.right {
+    text-align: left;
+  }
+  
+
+/* Projects Section */
+.projects{
+  font-size: 36px;
+  color: #4EB7F9;
+  text-align: center;
+  margin-top:130px;
+  margin-bottom:40px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Contact Section */
+.contact-section {
+  padding: 60px 20px;
+  background-color: #0B111E;
+  color: white;
+  
+}
+
+.Contact {
+  font-size: 36px;
+  color: #4EB7F9;
+  text-align: center;
+  margin-top:130px;
+  margin-bottom:40px;
+}
+
+
+.contact-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.contact-item {
+  background-color: #1A202C;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-item h2 {
+  font-size: 22px;
+  color: #4EB7F9;
+  margin-bottom: 10px;
+}
+
+.contact-item p {
+  font-size: 16px;
+  color: #E0E0E0;
+  margin-bottom: 15px;
+}
+
+.contact-item a {
+  font-size: 14px;
+  color: #4EB7F9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.aos-animate {
+  opacity: 1 !important; /* ทำให้แสดงผล */
+}
+
+
+
+
+
+
+/* Projects Section */
+.projects-section {
+  background-color: #0B111E;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 36px;
+  color: #4EB7F9;
+  text-align: center;
+  margin-top:130px;
+  margin-bottom:40px;
+}
+
+/* Projects Container */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap; /* ให้ลงบรรทัดใหม่ถ้าเต็ม */
+  gap: 20px; /* ระยะห่างระหว่างการ์ด */
+  justify-content: center; /* จัดกึ่งกลาง */
+}
+
+
+/* Project Card */
+.project-card {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 350px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  margin: 30px; /* เพิ่มขอบรอบการ์ดแต่ละใบ */
+  max-width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* เพิ่มความลื่นไหล */
+  
+}
+
+.project-card:hover {
+  transform: translateY(-10px); /* ขยับขึ้น 10px */
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้ดูเด่นขึ้น */
+}
+.project-details ul {
+  text-align: left; /* จัดข้อความให้อยู่ชิดซ้าย */
+  padding-left: 20px; /* เพิ่มช่องว่างด้านซ้ายเล็กน้อย */
+}
+
+.project-details ul li {
+  text-align: left; /* จัดข้อความแต่ละบรรทัดให้อยู่ซ้าย */
+  list-style-position: inside; /* ให้ bullet อยู่ใน padding */
+}
+
+
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-details {
+  padding: 15px;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.btn {
+  color: #fff;
+  text-decoration: none;
+  background-color: #007bff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.project-tags {
+  margin-top: 10px;
+}
+
+.project-tags span {
+  display: inline-block;
+  background-color: #444;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  margin-right: 5px;
+}
+
+
+
+
+  
+  

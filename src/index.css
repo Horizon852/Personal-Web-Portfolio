@@ -1,0 +1,49 @@
+/* Reset CSS */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ปรับพื้นหลังและข้อความ */
+body {
+  background-color: #0B111E; /* สีพื้นหลัง */
+  color: #c9d1d9; /* สีข้อความ */
+  font-family: 'Arial', sans-serif; /* ฟอนต์ */
+}
+
+
+
+.home {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #0B111E; /* พื้นหลังของหน้า */
+  color: #c9d1d9; /* สีข้อความ */
+  height: calc(100vh - 80px); /* ลดความสูงจาก Navbar */
+  margin-top:60px;
+}
+
+.welcome-text {
+  font-size: 24px;
+  color: #fff;
+  margin-top: 5px;
+  
+}
+
+.name {
+  font-size: 40px;
+  color: #4EB7F9;
+  margin-bottom: 20px;
+  margin-top:20px;
+}
+
+.profile-circle {
+  width: 370px;
+  height: 370px;
+  background-color: #4EB7F9;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+

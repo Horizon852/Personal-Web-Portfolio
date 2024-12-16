@@ -1,0 +1,80 @@
+.navbar {
+  display: flex;
+  justify-content: space-between; /* โลโก้ซ้าย, ลิงก์ขวา */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #1C2A3A;
+  color: #fff;
+  height: 50px;
+  height: 65px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 30px; /* ระยะห่างระหว่างลิงก์ */
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start; /* เริ่มต้นชิดซ้าย */
+  list-style: none; /* ลบจุดหน้ารายการ */
+}
+
+.navLinks > li {
+  position: relative;
+}
+
+.logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+
+
+.additional {
+  background-color: #f0a500;
+}
+
+/* เพิ่มเส้นข้างล่างเมื่อ hover */
+.link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4EB7F9;
+  transition: width 0.4s ease-in-out;
+}
+
+.link:hover::after {
+  width: 100%; /* ขยายเส้นเต็มความกว้าง */
+}
+
+.section {
+  padding-top: 80px; /* ปรับตามความสูงของ Navbar */
+}
+
+.theme-toggle {
+  background: transparent;
+  border: none;
+  color: var(--text-color); /* ใช้สีที่ปรับเปลี่ยนตามธีม */
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  color: #f39c12; /* สีเน้นเมื่อ Hover */
+}
+
